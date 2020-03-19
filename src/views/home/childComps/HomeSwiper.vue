@@ -1,7 +1,7 @@
 <template>
   <div>
     <swiper>
-      <swiper-item v-for="item in banners">
+      <swiper-item v-for="(item, index) in banners" :key="index">
         <!-- 使用v-bind才会认为是一个变量 -->
         <a :href="item.link">
           <img :src="item.image" alt="" @load="imagLoad">
