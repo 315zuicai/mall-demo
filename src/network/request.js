@@ -4,7 +4,7 @@ export function request(config) {
   
     // 1.创建axios的实例
   const instance = axios.create({
-    baseURL: "此处不外露" ,
+    // baseURL: "此处不外露" ,
     // baseURL: "此处不外露" ,
     timeout: 5000
   });
